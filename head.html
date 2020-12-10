@@ -1,0 +1,285 @@
+<?php
+include_once "config.php";
+include_once 'lang/lang.php';
+?>
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=1" />
+    <title>CV Ludivine Nadeau</title>
+    
+
+  
+<!-- Bootstrap placé au-dessus pour pouvoir être "écrasé" par le fichier style.css. On pourra modifier le style sans être gêné par Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/css/style.css" />
+<script src="https://kit.fontawesome.com/161626f7e5.js" crossorigin="anonymous"></script>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    
+    <!--<script src="assets/js/datatable/french.json"></script>
+    <script src="assets/js/sweetalert/sweet.alert.js"></script>-->
+    <script src="assets/JS/jquery_ui/jquery-ui.min.js"></script>
+    <!-- personal scripts -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    
+</head>
+
+<body class="container-fluid" id="page-top">   
+    <header id="home">
+        <nav class="navbar navbar-expand-lg" id="navbar">       
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#button" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="fa fa-bars fa-2x"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#who"  role="button" aria-haspopup="true" aria-expanded="false">A propos...</a>
+                    </li>                                     
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skill"  role="button" aria-haspopup="true" aria-expanded="false">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#project" role="button" aria-haspopup="true" aria-expanded="false">Projet en cours de finalisation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#experience" role="button" aria-haspopup="true" aria-expanded="false">Expérience professionelle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#formation" role="button" aria-haspopup="true" aria-expanded="false">Formations et diplômes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#contact" role="button" aria-haspopup="true" aria-expanded="false">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>               
+        <div class="head">            
+            <div class="content text-center" > 
+                <h1 class="text-center" style="color: #dc3545;">Ludivine Nadeau<br><hr>Développeuse Web Junior</h1>                              
+            </div> 
+            <img src="assets/img/backgroundImg.png" alt="bureau" style="width:105%;">           
+        </div>   
+
+</header>
+
+<hr>
+
+<section id="who">
+    <div class="container">
+        <h2 class="text-center"><b><i>A propos...</i></b></h2>
+        <div class="row">
+            <div class="col">
+                <div class="profil">
+                    <img src="assets/img/face_co.png" id="profil" onmouseover=passageDeLaSouris(this); onmouseout=departDeLaSouris(this);/>
+                </div>
+                    <p><b>Nom:</b> NADEAU<br/>
+                    <b>Prénom:</b> Ludivine<br/>
+                    <b>Age:</b> 43 ans</p>
+            </div>
+
+            <div class="col">             
+                    <p>J'ai récemment obtenu le titre professionnel de Développeuse Web Web Mobile (RNCP 31114, niveau bac+2). Ce titre à été obtenu suite à une formation intensive de 805 heures sur 6 mois avec le centre de formation LA MANU de Noyon(60400) <br/>
+                    <hr>
+                        Cette formation m'a permise d'acquérir de l'autonomie car son objectif est "apprendre à apprendre". <br/>
+                        Je ne me lasse pas d'étoffer mon panel de connaissances : je profite de mon temps libre pour apprendre de nouvelles technologies et frameworks<br/><hr>
+                        Après avoir travaillé de nombreuses années en tant que conseillère clientèle, j'ai choisi de me renconvertir en développeuse web.
+                        Ayant déjà travaillé en groupe, je peux travailler seule comme en groupe, m'adapter à un environnement de travail inconnu.<br/>
+                        Je cherche à optimiser au mieux le code, en gardant la ligne directrice de la conception "KISS" ( Keep It Simple, stupid).
+                    </p>
+
+            </div>
+        </div>
+</div>
+</section>
+
+<section id="formation">   
+    <div class="container">
+                <h2 class="text-center"><b><i>Formation et diplômes</i></b></h2>
+        <div class="row">
+            <div class="col-lg-9 mx-auto">                
+                <!-- Timeline -->
+                <ul class="timeline">
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                            <h3 class="h5 mb-0">Formation "Développeur Web Web Mobile"</h3><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Septembre 2019 - Mars 2020</span>
+                            <p class="text-small mt-2 font-weight-light">Formation intensive à l'école numérique LA MANU de Noyon (60400) <hr>
+                            titre d'état obtenu en Octobre 2020.</p>
+                    </li>
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                            <h3 class="h5 mb-0">BTS Action Commerciale</h3><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Septembre 2001 - Juillet 2003</span>
+                            <p class="text-small mt-2 font-weight-light">Contrat d'apprentissage avec l'Institut Consulaire de Formation en Alternance (ICFA) de Bordeaux (33300) et France Telecom - Bordeaux (33000)</p>
+                    </li>
+                    <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                        <div class="timeline-arrow"></div>
+                            <h3 class="h5 mb-0">Bac Scientifique option Mathématiques</h3><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Juillet 1997</span>
+                            <p class="text-small mt-2 font-weight-light">Lycée La Sauque - 33650 La Brède</p>
+                    </li>
+                </ul><!-- End -->
+            </div>
+        </div>    
+    </div>
+</section>
+
+<section id="skill">   
+    <div class="container-fluid">
+        <h2 class="text-center"><b><i>Compétences</i></b></h2>       
+        <div class="row">
+            <div class="col">
+                <h3>Front-end</h3><br/>
+                <p>Création et integration de sites web responsives , accessibles et répondant aux normes W3C</p>
+                   
+                        <i class="fab fa-html5 text-right"></i> HTML5  <span class="text-right"></span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span><br/>
+                        <i class="fab fa-css3-alt"></i> CSS3  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br/>
+                        <i class="fab fa-js-square"></i> Javascript  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br/>
+                        JQuery  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br/>
+                        <i class="fab fa-bootstrap"></i> Bootstrap  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br/>
+                        JSON  <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br/>
+                        AJAX  <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br/>
+            </div>      
+            <div class="col">
+                <h3>Back-end</h3><br/>
+                <p>Développement de sites web, création et gestion de base de données, programmation orientée objet, mise en ligne</p>
+
+                <i class="fab fa-php"></i> PHP  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br/>
+                MySql <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br/>
+                Connexion FTP  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br/>               
+            </div>
+        </div>
+        <div id="workflow">
+            <h3>Environnement de travail :</h3>
+            <p>
+                <i class="fas fa-laptop-code"></i>   <b>système d'exploitation :</b> Windows 10, Linux ubuntu <br/>
+                <i class="fas fa-terminal"></i>   <b>Workflow :</b> GitHub, WAMP, Uwamp, Firefox, Chrome, Filezilla<br/>
+                <i class="fas fa-code"></i>   <b>IDE:</b> Visual Studio Code, Atom, NetBeans, Sublim Text </br>
+                <i class="fas fa-user"></i>   <b>Savoir-être :</b> travail en équipe, bon relationnel, capacité d'écoute et d'analyse,  facilité d'adadptation, organisation, rigueur</p>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="project">
+    <div class="container">
+        <h2 class="text-center"><b><i>Projet en cours de finition :</i></b></h2><br/>
+        <p>Lors de ma formation, j'ai developpé des codes en groupe afin de faire des sites web, sur differentes thématiques</br>
+        Pour l'obtention du titre professionel "Developpeur Web Web Mobile, j'ai réalisé le projet "mamienouche.com", qui est en cours de finition<br/>
+        Thématique de ce site: "comment confectionner les produits pour l'entretien de la maison, des produits d'hygiène/cosmétique depuis chez soi, et astuces de grand-mère"<br/>
+        La confection de ce site m'a permis d'approffondir mes connaissances et aborder de nouvelles techniques, comme Ajax<br/>
+        Voici quelques views pour avoir une vision globale du site. Vous pouvez également vous rendre sur ce site qui est libre d'acces : <a href="https://mamienouche.com/"><b>mamienouche.com</b></a></p><hr>
+    <div id="slider">
+        <figure>
+            <img src="assets/img/acceuilMamieNouche.png" alt="acceuil">
+            <img src="assets/img/creationCompte.png" alt="creation de compte">            
+            <img src="assets/img/connexionMamienouche.png" alt="connexion">
+            <img src="assets/img/MDPoublié.png" alt="mot de passe oublié">
+            <img src="assets/img/userProfile.png" alt="Profil de l'utilisateur">
+            <img src="assets/img/redactionArticles.png" alt="redaction de recette">
+            <img src="assets/img/articleWritten.png" alt="modification d'une recette">
+            <img src="assets/img/confirmationCreation.png" alt="message d'enregistrement de la recette">
+            <img src="assets/img/listeUsers.png" alt="Liste des utilisateurs">
+            <img src="assets/img/acceuilMamieNouche.png" alt="acceuil">
+        </figure>
+    </div>
+</div>   
+</section>
+
+<section id="experience">   
+    <div class="container">
+                <h2 class="text-center"><b><i>Expérience professionelle</i></b></h2>
+
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    
+                    <!-- Timeline -->
+                    <ul class="timeline">
+                        <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                            <div class="timeline-arrow"></div>
+                                <h4 class="text-center"><b>Conseillère clientèle - Assistante technique</b></h4><hr>
+                                    <span class="text-center"><i class="fa fa-clock-o mr-1"></i>Février 2007 - Juillet 2019</span><br/>
+                                    <span class="text-center">Voyages Rive Gauche<br/> 93320 Les Pavillons Sous bois</span><hr>
+                                        <ul class="text-small mt-2 font-weight-light">
+                                            <li>Acceuil physique et téléphonique de la clientèle</li>
+                                            <li>Ecoute et analyse des attentes des clients</li>
+                                            <li>Suivi du dossier des clients ( de la vente du voyage jusqu'au départ)</li>
+                                            <li>Démarches administratives( demande de visas auprès des organismes concernés, respect du timing , envoi du carnet de voyage aux clients, relance de solde)</li>
+                                        </ul>
+                        </li>
+                        <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                            <div class="timeline-arrow"></div>
+                                <h4 class="text-center"><b>De Septembre 2003 à Janvier 2007:</b></h4><hr>
+                                <ul class="text-small mt-2 ">
+                                    <li><b>Chargée de recouvrement</b> - Orange (33000 Bordeaux)</li>
+                                    <li><b>Conseillère clientèle</b> - Cofinoga (33000 Bordeaux)</li>
+                                    <li><b>Gestionnaire de sinistres</b> - Cofinoga assurances (33700 Mérignac)</li>
+                                    <li><b>Conseillère clientèle</b> - Banque Casino (33000 Bordeaux)</li>
+                                </ul>
+                        </li>
+                        <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                            <div class="timeline-arrow"></div>
+                                <h4 class="text-center"><b>Conseillère Clientèle à distance (1014)</b></h4><hr>
+                                    <span class="text-center"><i class="fa fa-clock-o mr-1"></i>Septembre 2001 - Aout 2003</span><br/>
+                                    <span class="text-center">FRANCE TELECOM<br/> 33000 Bordeaux</span><hr>
+                        </li>
+                        <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                            <div class="timeline-arrow"></div>
+                                <h4 class="text-center"><b>Chef d'équipe - formatrice</b></h4><hr>
+                                    <span class="text-center"><i class="fa fa-clock-o mr-1"></i>Septembre 1998 - Septembre 2001</span><br/>
+                                    <span class="text-center">MC DONALD'S<br/> 33300 Bordeaux</span><hr>
+                        </li>                       
+                    </ul><!-- End -->    
+                </div>
+            </div>
+        </div>
+</section>
+
+<section id="contact">
+    <div Class="container-fluid">
+        <h2 class="text-center"><b><i>Contact</i></b></h2>
+        <div class="row">
+            <div class="col" id="join">              
+                <i class="fas fa-mobile-alt fa-4x"></i><br/>
+                <p><b>+33 6 09 16 10 13</b></p>
+            </div>
+            <div class="col" id="join">
+                <i class="far fa-paper-plane fa-4x"></i><br/>
+                <p><a href="ludivine.nadeau@gmail.com">ludivine.nadeau@gmail.com</p></a>
+            </div>
+            <div class="col" id="join">
+                <i class="fas fa-map-marked-alt fa-4x"></i><br/>
+                <p>20 Rue de la basse Ville<br/>
+                60310 LASSIGNY</p>
+            </div>
+            <div class="col"id="join">
+                <a class=btn" href="https://www.linkedin.com/in/ludivine-nadeau-522a4b8b">
+                    <i class="fab fa-linkedin fa-4x"></i><br/>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <!-- Scroll to Top Button-->
+<a class="scrollToTop" href="#page-top">
+    <i class="fas fa-paint-home"></i>
+</a>
+    <div class="text-center">
+        <p>Ludivine Nadeau © <hr>
+        Website2020</p>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/161626f7e5.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+</footer>
+</body>
+            
+            
