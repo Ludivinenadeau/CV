@@ -9,14 +9,15 @@ body{
     position: fixed;
     top: 5%;
     width: 100%;
-    margin-top: -1em;
+    padding-left: 2em;
     margin-right: 2em;
-    background-color: rgba(31, 27, 27, 0.459);
+    background-color: rgba(31, 27, 27, 0.877);
     color: #ede3e3;
     display:inline-block;
     padding-right: 2em;
     z-index: 9999;
-   /* padding: 15px 0px;*/
+    /*padding: 15px 0px;*/
+    font-size: 20px;
     
 }
 
@@ -40,14 +41,6 @@ body{
     margin-right: 2em;
     
   }
-
-.head{
-
-    padding-top: 1em;
-    margin-top: 1em;
-    margin-right: 2em;
-    position: absolute;
-}  
 
 
 #home{
@@ -99,25 +92,6 @@ h2{
     margin-bottom: 20px;
 }
 
-.head img {vertical-align: middle;}
-
-.head {
-    background-position: relative;
-    position: relative;
-    max-width: 800px; /* Maximum width */
-    margin: 0 auto; /* Center it */
-    opacity: 0.75;
-  }
-  
-  .head .content {
-    position: absolute; /* Position the background text */
-    /*bottom: 40%; /* At the bottom. Use top:0 to append it to the top */
-    background: rgba(0, 0, 0, 0.363); /* Fallback color */
-    background: rgba(0, 0, 0, 0); /* Black background with 0.5 opacity */
-    color: #f1f1f1; /* Grey text */
-    width: 100%; /* Full width */
-    padding: 7em; /* Some padding */
-  }
 
 #profil {
     display:inline-block;
