@@ -16,7 +16,6 @@ body{
     display:inline-block;
     padding-right: 2em;
     z-index: 9999;
-    /*padding: 15px 0px;*/
     font-size: 20px;
     
 }
@@ -263,6 +262,10 @@ i.fas.fa-arrow-alt-circle-up.fa-2x{
     padding-top: 1em;
     margin-left: 1em;
     margin-right: 1em;
+}
+
+#dotnet{
+    height: 5%;
 }
 
 footer{

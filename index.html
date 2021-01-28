@@ -4,24 +4,26 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, user-scalable=1" />
-    <title>CV Ludivine Nadeau</title>
+        <title>Ludivine Nadeau</title>
 
-    <!-- Bootstrap placé au-dessus pour pouvoir être "écrasé" par le fichier style.css. On pourra modifier le style sans être gêné par Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="https://kit.fontawesome.com/161626f7e5.js" crossorigin="anonymous"></script>
+        <!-- Bootstrap placé au-dessus pour pouvoir être "écrasé" par le fichier style.css. On pourra modifier le style sans être gêné par Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
 
-
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
-    <!--<script src="assets/js/datatable/french.json"></script>
-    <script src="assets/js/sweetalert/sweet.alert.js"></script>-->
-    <script src="assets/js/jquery_ui/jquery-ui.min.js"></script>
-    <!-- personal scripts -->
-    <script type="text/javascript" src="assets/js/script.js"></script>
+        <script src="https://kit.fontawesome.com/161626f7e5.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <!--<script src="assets/js/datatable/french.json"></script>
+        <script src="assets/js/sweetalert/sweet.alert.js"></script>-->
+        <script src="assets/js/jquery_ui/jquery-ui.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <!-- personal scripts -->
+        <script type="text/javascript" src="assets/js/script.js"></script>
 
 </head>
 
@@ -34,7 +36,7 @@
             <div id="sideBarNav" class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index." role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-home fa-2x"></i></a>
+                        <a class="nav-link" href="#home" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-home fa-2x"></i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#who" role="button" aria-haspopup="true" aria-expanded="false">A propos...</a>
@@ -94,8 +96,9 @@
                     <p>J'ai récemment acquis le titre professionnel <i>de Développeuse Web Web Mobile </i>(RNCP 31114, niveau
                         bac+2). Ce titre à été obtenu suite à une formation intensive de 805 heures sur 6 mois avec le
                         centre de formation LA MANU de Noyon(60400) <br />
+                        Actuellement, je complète mes connaissances en suivant la formation certifiante .NET (400 heures sur 3 mois, toujours avec le centre de formation LA MANU de Noyon -60400)<br/>
                         <hr>
-                        Cette formation m'a permis d'acquérir de l'autonomie car son objectif est "apprendre à
+                        Ces formations m'ont permis d'acquérir de l'autonomie car leurs objectifs est "apprendre à
                         apprendre". <br />
                         Je ne me lasse pas d'étoffer mon panel de connaissances : je profite de mon temps libre pour
                         apprendre de nouvelles technologies et frameworks.<br />
@@ -119,7 +122,15 @@
             <div class="row">
                 <div class="col-lg-9 mx-auto">
                     <!-- Timeline -->
-                    <ul class="timeline">
+                    <ul name="effect" class="timeline">
+                        <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                            <div class="timeline-arrow"></div>
+                            <h3 class="h5 mb-0">Formation .NET</h3>
+                                <span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Janvier 2021 - Avril 2021</span>
+                                <p class="text-small mt-2 font-weight-light">Formation certifiante à l'école numérique LA MANU
+                                de Noyon (60400)<br/>
+                                durée de la formation: 400 heures sur 3 mois</p>
+                        </li>
                         <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
                             <div class="timeline-arrow"></div>
                             <h3 class="h5 mb-0">Formation "Développeur Web Web Mobile"</h3>
@@ -186,11 +197,13 @@
                     <hr>
                     <p>Développement de sites web, création et gestion de base de données, programmation orientée objet,
                         mise en ligne</p>
-                    <hr>        
+                    <hr>
+                    <img src="../assets/img/c-sharp.png" id="dotnet"/>.NET <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br/>        
                     <i class="fab fa-php"></i> PHP <i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                        class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br />
-                    MySql <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br />
+                    MySql <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i
                         class="far fa-star"></i><i class="far fa-star"></i><br />
+                        <i class></i>
                     Connexion FTP <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i
                         class="far fa-star"></i><i class="far fa-star"></i><br />
                 </div>
@@ -199,10 +212,11 @@
                 <h3 style="color: #ac77b5;"><b>Environnement de travail :</b></h3>
                 <hr>
                 <p>
-                    <i class="fas fa-laptop-code"></i> <b>système d'exploitation :</b> Windows 10, Linux ubuntu <br/>
-                    <i class="fas fa-terminal"></i> <b>Workflow :</b> GitHub, WAMP, Uwamp, Firefox, Chrome,
+                    <i class="fas fa-laptop-code"></i> <b>système d'exploitation :</b> Windows 10, Linux ubuntu <br/>                    
+                    <i class="fas fa-terminal"></i> <b>Workflow :</b> GitHub, WAMP, uWamp, Firefox, Google Chrome,
                     Filezilla<br />
-                    <i class="fas fa-code"></i> <b>IDE:</b> Visual Studio Code, Atom, NetBeans, Sublim Text </br>
+                    <i class="fas fa-code"></i> <b>IDE:</b> Visual Studio, Visual Studio Code, Atom, NetBeans, Sublim Text </br>
+                    <i class="fas fa-code"></i> <b>CMS: WordPress</b>
                     <i class="fas fa-user"></i> <b>Savoir-être :</b> travail en équipe, bon relationnel, capacité
                     d'écoute et d'analyse, facilité d'adadptation, organisation, rigueur</p>
                 </p>
