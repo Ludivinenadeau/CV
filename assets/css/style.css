@@ -7,27 +7,29 @@ body{
     padding-right: 2em;
 }
 
-#navbar{
+#navbarPosition{
     /*position: fixed;*/
-    top: 5%;
-    width: 100%;
     padding-left: 2em;
     /*padding-right: 2em;
     margin-right: 2em;*/
-    background-color: rgba(31, 27, 27, 0.877);
+    background-color: rgba(31, 27, 27, 0.4);
     color: #d5b5e066;
-    display:inline-block;
-    z-index: 9999;
+    /*display:inline-block;*/
+    /*z-index: 9999;*/
     font-size: 18px;
-    border-radius: 10px;
-    text-align: center;
+    text-align: center;   
+}
+
+i.fas-fa-home{
+    color: #d5b5e066;
     
 }
 
 .image-container {
     position: relative;
     text-align: center;  
-    font-family: above the sky script; 
+    border-radius: 10px;
+    color: rgba(213, 181, 224, 0,4);
 }
 
 .image-centered {
@@ -46,9 +48,30 @@ body{
     
   }
 
+section {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+#profil {
+    display:inline-block;
+    max-width:200px;
+    background: url('/assets/img/face_co.png') no-repeat;
+    }
+
+#profil a{
+    display: inline-block;
+    background: url('/assets/img/photoProfil.jpg') no-repeat;
+    }
+
+#profil a:hover img {
+    visibility: hidden;
+    }
 
 #home{
-    background-color: #d5b5e066;
+    background-color: hsla(285, 41%, 79%, 0.4);
     margin-top:1.5em;
     padding-top: 1.5em;
     margin-bottom: 2em;
@@ -58,7 +81,8 @@ body{
 
 #formation{
     background-color: #d5b5e066;
-    padding-top: 2em;
+    border-radius: 10px;
+    padding-top: 1em;
     margin-bottom: 2em;
     padding-bottom: 2em;
 }
@@ -66,12 +90,12 @@ body{
 #project{
     background-color: #d5b5e066;
     border-radius: 10px;
-    padding-top: 2em;
-    margin-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 2em;
 }
 
 #contact{
-    padding-top: 20px;
+    padding-top: 1em;
     padding-bottom: 20px;
     background-color:#d5b5e066;
     border-radius: 10px;
@@ -89,9 +113,9 @@ body{
 }
 
 #experience{
-    padding-top: 2em;
+    padding-top: 1em;
     margin-bottom: 2em;
-    border: 2px solid  #d5b5e066 ;
+    border: 5px solid  #d5b5e066 ;
     border-radius: 10px;
 }
 
@@ -101,7 +125,7 @@ h2{
 }
 
 #who{
-    border: 2px solid  #d5b5e066 ;
+    border: 5px solid  #d5b5e066 ;
     border-radius: 10px;
 }
 
@@ -123,7 +147,7 @@ h2{
 
 ul.timeline {
     list-style-type: none;
-    /*position: relative;*/
+    position: relative;
     padding-left: auto;
 }
 
@@ -161,7 +185,7 @@ li.timeline-item::before {
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    border: 3px solid black;
+    border: 5px solid rgb(99, 97, 97);
     left: 11px;
     width: 14px;
     height: 14px;
@@ -169,49 +193,21 @@ li.timeline-item::before {
     box-shadow: 0 0 5px rgba(5, 5, 5, 0.377);
 }
 
-
-/* definition size et slider figures */
-div#slider{ 
-    width: 80%;
-    max-width: 1000px;
-    overflow: hidden; 
-    margin-left: 20%;
-}
-
-div#slider figure img {
-        width: 10%; 
-        float: left; 
-        height: auto;
-        border: black;
-    }
-
-div#slider figure { 
-    position: relative;
-    width: 1000%;
-    margin: 0;
-    padding: 0;
-    left: 0;
-    text-align: left;
-    font-size: 0;
-    animation: 20s slidy infinite; 
-}
-
-@keyframes slidy {
-    0% { left: 0%; }
-    10% { left: -100%; }
-    20% { left: -100%; }
-    30% { left: -150%; }
-    40% { left: -150%; }
-    50% { left: -200%; }
-    60% { left: -200%; }
-    70% { left: -250%; }
-    80% { left: -250%; }
-    90% { left: -300%; }
-    }
+#slider {
+    padding-bottom: 3em;
+    margin-left: 3em;
+    margin-right: 3em;
+    border: 3px solid rgb(99, 97, 97);
+    border-radius: 8px;
+    background-color: #646881;
+    margin-top: 2em;
     
-   
+}
+
+
+
 #join{
-        border: 1px solid black;
+        border: 5px solid black;
         border-radius: 10px;
         background-color: white;
         text-align: center;
@@ -219,10 +215,9 @@ div#slider figure {
         margin-right: 1em;
         padding-top: 1em;
         padding-bottom: 1em;
+        padding-bottom: 1em;
         
     }
-
-
 
 i.fas.fa-star{
     color: rgba(145, 42, 145, 0.356);
@@ -249,10 +244,22 @@ i.fas.fa-map-marked-alt.fa-4x{
 i.fas.fa-arrow-alt-circle-up.fa-2x{
     color: #817198;
     position: right;
+    
+}
+
+i.fab.fa-linkedin.fa-4x{
+    text-align: center;
+    color: #817198;
+
+}
+
+.carousel-control-next-icon { 
+    height: 5em; 
+    color: #817198;
 }
 
 #workflow{
-    border: 2px solid   #fdecf4;
+    border: 5px solid   #d5b5e066;
     border-radius: 10px;
     text-align: center;
     margin-top: 1em;
@@ -263,7 +270,7 @@ i.fas.fa-arrow-alt-circle-up.fa-2x{
 
 #frontend{
     margin-right: 20px;
-    border: 2px solid   #fdecf4;
+    border: 5px solid   #d5b5e066;
     border-radius: 10px;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -272,15 +279,11 @@ i.fas.fa-arrow-alt-circle-up.fa-2x{
 }
 
 #backend{
-    border: 2px solid   #fdecf4 ;
+    border: 5px solid  rgb(213, 181, 224) ;
     border-radius: 10px;
     padding-top: 1em;
     margin-left: 1em;
     margin-right: 1em;
-}
-
-#dotnet{
-   /* height: 5%;*/
 }
 
 footer{
@@ -306,5 +309,7 @@ footer{
   .scrollToTop:hover {
     background: rgba(213, 181, 224, 0.4);
   }
+
+ 
   
 

@@ -1,352 +1,386 @@
-﻿<!DOCTYPE html>
-<html lang="fr" dir="ltr">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=1" />
-        <title>Ludivine Nadeau</title>
+<!DOCTYPE html>
+  <html lang="fr">
+        <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+          <link rel="stylesheet" href="assets\css\style.css" />
+          <title>CV Ludivine Nadeau</title>
+        </head>
+        <body class="container-fluid">
+            <header>
+                <!--mise en place de la navbar-->
 
-        <!-- Bootstrap placé au-dessus pour pouvoir être "écrasé" par le fichier style.css. On pourra modifier le style sans être gêné par Bootstrap -->
-       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-
-<body class="container-fluid" id="page-top">
-    <header id="home">
-        <nav class="navbar navbar-expand-lg" id="navbar">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sideBarNav" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation" style="color: #ede3e3; margin-left: 2em;">
-                <span class="fa fa-bars fa-2x"></span>
-            </button>
-            <div id="sideBarNav" class="collapse navbar-collapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-home fa-2x"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#who" role="button" aria-haspopup="true" aria-expanded="false">A propos...</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#formation" role="button" aria-haspopup="true"
-                            aria-expanded="false">Formations et diplômes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skill" role="button" aria-haspopup="true"
-                            aria-expanded="false">Compétences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#project" role="button" aria-haspopup="true"
-                            aria-expanded="false">Projet en cours de finalisation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#experience" role="button" aria-haspopup="true"
-                            aria-expanded="false">Expérience professionelle</a>
-                    </li>                    
-                    <li class="nav-item">
-                        <a class="nav-link " href="#contact" role="button" aria-haspopup="true"
-                            aria-expanded="false">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <div class="image-container">
-            <img src="/assets/img/backgroundImg.png" alt="bureau" style="width:100%; opacity: 0.4;">
-                <div class="image-centered" style="color: #817198;">
-                    <h1><b>Ludivine Nadeau
-                        <hr/>
-                            Développeuse Web Junior</b>
-                    </h1>
-                </div>
-        </div>
-    </header>
-
-    <hr>
-
-    <section id="who">
-        <div class="container-fluid">
-            <h2 class="text-center" style="color: #817198;"><b><i>A propos...</i></b></h2>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <div class="profil">
-                            <img src="/assets/img/face_co.png" id="profil" onmouseover=passageDeLaSouris(this);
-                                onmouseout=departDeLaSouris(this); />
-                        
-                        <p><b>Nom:</b> NADEAU<br />
-                            <b>Prénom:</b> Ludivine<br />
-                            <b>Age:</b> 43 ans</p>
+                <nav class="navbar navbar-expand-lg navbar-dark  bg-dark fixed-top" id="navbarPosition">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon" aria-hidden="true" style="color: rgb(213, 181, 224);"></span>
+                        </button>
+                        <div class="navbar-collapse collapse show" id="navbarScroll">
+                            <ul class="navbar-nav me-auto my-2 my-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#who" role="button" aria-haspopup="true"
+                                                aria-expanded="false">A propos ...</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#formation" role="button" aria-haspopup="true"
+                                            aria-expanded="false">Formations & diplômes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#skill" role="button" aria-haspopup="true" aria-expanded="false">Compètences</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#project" role="button" aria-haspopup="true"
+                                            aria-expanded="false">Projet en cours de finalisation</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#experience" role="button" aria-haspopup="true"
+                                            aria-expanded="false">Expériences professionelles</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#contact" role="button" aria-haspopup="true"
+                                            aria-expanded="false">Contact</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-
-                    <div class="col-md-6">
-                        <p>J'ai récemment acquis le titre professionnel <i>de Développeuse Web Web Mobile </i>(RNCP 31114, niveau
-                            bac+2). Ce titre à été obtenu suite à une formation intensive de 805 heures sur 6 mois avec l'école numérique LA MANU de Noyon(60400) <br />
-                            Actuellement, je complète mes connaissances en suivant la formation certifiante .NET (400 heures sur 3 mois, toujours avec l'école numérique LA MANU de Noyon.
-                            <hr>
-                            Ces formations m'ont permis d'acquérir de l'autonomie car leurs objectifs est "apprendre à
-                            apprendre". 
-                            Je ne me lasse pas d'étoffer mon panel de connaissances : je profite de mon temps libre pour
-                            apprendre de nouvelles technologies et frameworks.
-                            <hr>
-                            Suite à la mutation de mon conjoint, j'ai choisi de me convertir en développeuse web.
-                            Ayant déjà travaillé en groupe, je peux travailler seule comme en groupe, m'adapter à un
-                            environnement de travail inconnu.
-                            <hr>
-                            Je cherche à optimiser au mieux le code, en gardant la ligne directrice de la conception "KISS"
-                            ( Keep It Simple, stupid).
-                        </p>
-
+                </nav>
+                    
+                <div class="image-container">
+                    <img src="assets/img/backgroundImg.png" alt="bureau" style="width:100%; height :auto; opacity: 0.4; color: rgb(213, 181, 224); border-radius: 10px; ">
+                        <div class="image-centered">
+                            <h2><b>Ludivine Nadeau
+                                <hr/>
+                                    Développeuse Web Junior</b>
+                            </h2>
+                            <p>Je souhaite monter en compétences. Aussi, je suis à la recherche d'une entreprise pour suivre une formation <i>Concepteur Développeur d'application</i> , 1 an et en alternance avec l'école Numérique <b>La Manu - 60400 NOYON</b>.</p>
+                            
+                        </div>
+                    </nav>
+            </header>       
+        
+            <section id="who">
+                <div class="container-fluid">
+                    <h2 class="text-center" style="color: #817198;"><b><i>A propos...</i></b></h2>
+                        <div class="row text-center">
+                            <div class="col-md-3">
+                                <div class="profil">
+                                    <img src="assets/img/face_co.png" id="profil" onmouseover=passageDeLaSouris(this);
+                                        onmouseout=departDeLaSouris(this); />
+                                
+                                    <p><b>Nom:</b> NADEAU<br />
+                                    <b>Prénom:</b> Ludivine<br />
+                                    <b>Age:</b> 43 ans</p>
+                                </div>
+                            </div>        
+                            <div class="col-md-8">
+                                <p>J'ai récemment acquis le titre professionnel <i>de Développeuse Web Web Mobile </i>(RNCP 31114, niveau
+                                    bac+2). Ce titre à été obtenu suite à une formation intensive de 805 heures sur 6 mois avec l'école numérique LA MANU de Noyon(60400) <br />
+                                    Actuellement, je complète mes connaissances en suivant la formation certifiante .NET (400 heures sur 3 mois, toujours avec l'école numérique LA MANU de Noyon.
+                                    <hr>
+                                    Ces formations m'ont permis d'acquérir de l'autonomie car leurs objectifs est "apprendre à
+                                    apprendre". 
+                                    Je ne me lasse pas d'étoffer mon panel de connaissances : je profite de mon temps libre pour
+                                    apprendre de nouvelles technologies et frameworks.
+                                    <hr>
+                                    Suite à la mutation de mon conjoint, j'ai choisi de me convertir en développeuse web.
+                                    Ayant déjà travaillé en groupe, je peux travailler seule comme en groupe, m'adapter à un
+                                    environnement de travail inconnu.
+                                    <hr>
+                                    Je cherche à optimiser au mieux le code, en gardant la ligne directrice de la conception "KISS"
+                                    ( Keep It Simple, stupid).
+                                </p>        
+                            </div>
+                        </div>
+                </div>
+            </section>           
+            <section id="formation">
+                <div class="container">
+                    <h2 class="text-center"><b><i>Formations et diplômes</i></b></h2>
+                    <div class="row">
+                        <div class="col-lg-9 mx-auto">
+                            <!-- Timeline -->
+                            <ul name="effect" class="timeline">
+                                <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                                    <div class="timeline-arrow"></div>
+                                    <h3 class="h4 mb-0 text-center">Formation .NET</h3>
+                                    <hr />
+                                        <p><i class="fa fa-clock-o mr-1"></i> Janvier 2021 - Avril 2021<br>
+                                    <hr />
+                                        Formation certifiante à l'école numérique LA MANU de Noyon (60400)<br/>
+                                        durée de la formation: 400 heures sur 3 mois</p>
+                                </li>
+                                <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                                    <div class="timeline-arrow"></div>
+                                    <h3 class="h4 mb-0 text-center">Formation "Développeur Web Web Mobile"</h3>
+                                    <hr />
+                                        <p><i class="fa fa-clock-o mr-1"></i> Septembre 2019 - Mars 2020</br>
+                                    <hr />
+                                        Formation intensive à l'école numérique LA MANU de Noyon (60400)<br/>
+                                        durée de la formation: 805 heures sur 6 mois<br/>
+                                        Formation diplômante préparant au Titre Professionel "Developpeur Web Web Mobile"<br/>
+                                        RNCP 31114 BAC+2, Niveau 5 de la nomencalture européenne<br/>
+                                        Titre certifié par l'Etat et délivré par la ministère du travail<br/>
+                                    <hr />
+                                        Titre d'Etat obtenu en Octobre 2020.</p>
+                                </li>
+                                <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                                    <div class="timeline-arrow"></div>
+                                    <h3 class="h4 mb-0 text-center">BTS Action Commerciale</h3>
+                                    <hr />
+                                    <p><i class="fa fa-clock-o mr-1"></i> Septembre 2001 - Juillet 2003<br/>
+                                    <hr />
+                                    Contrat d'apprentissage avec l'Institut Consulaire de Formation en Alternance (ICFA) et France Telecom
+                                    <hr>
+                                        Bordeaux (33000)</p>
+                                </li>
+                                <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                                    <div class="timeline-arrow"></div>
+                                    <h3 class="h4 mb-0 text-center">Bac Scientifique option Mathématiques</h3>
+                                    <hr />
+                                    <p><i class="fa fa-clock-o mr-1"></i> Juillet 1997<br>
+                                    <hr />
+                                    Lycée La Sauque <br>
+                                    33650 La Brède</p>
+                                </li>
+                            </ul><!-- End -->
+                        </div>
                     </div>
                 </div>
-        </div>
-    </section>
-
-    <section id="formation">
-        <div class="container">
-            <h2 class="text-center"><b><i>Formations et diplômes</i></b></h2>
-            <div class="row">
-                <div class="col-lg-9 mx-auto">
-                    <!-- Timeline -->
-                    <ul name="effect" class="timeline">
-                        <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-                            <div class="timeline-arrow"></div>
-                            <h3 class="h4 mb-0 text-center">Formation .NET</h3>
+            </section>       
+            <section id="skill">
+                <div class="container-fluid">
+                    <h2 class="text-center"><b><i>Compétences</i></b></h2>
+                    <div class="row">
+                        <div class="col" id="frontend" >
+                            <h3 class="text-center" style="color: #817198;"><b>Front-end</b></h3>
                             <hr>
-                                <p><i class="fa fa-clock-o mr-1"></i>Janvier 2021 - Avril 2021<br>
+                            <p>Création et integration de sites web responsives , accessibles et répondant aux normes W3C</p>
                             <hr>
-                                Formation certifiante à l'école numérique LA MANU de Noyon (60400)<br/>
-                                durée de la formation: 400 heures sur 3 mois</p>
-                        </li>
-                        <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-                            <div class="timeline-arrow"></div>
-                            <h3 class="h4 mb-0 text-center">Formation "Développeur Web Web Mobile"</h3>
+                            <i class="fab fa-html5 text-right"></i> HTML5 <span class="text-right"></span><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="far fa-star"></i><i class="far fa-star"></i></span><br />
+                            <i class="fab fa-css3-alt"></i> CSS3 <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br />
+                            <i class="fab fa-js-square"></i> Javascript <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br />
+                            JQuery <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i
+                                class="far fa-star"></i><i class="far fa-star"></i><br />
+                            <i class="fab fa-bootstrap"></i> Bootstrap <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br />
+                            JSON <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                class="far fa-star"></i><i class="far fa-star"></i><br />
+                            AJAX <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                class="far fa-star"></i><i class="far fa-star"></i><br />
+                        </div>
+                        <div class="col" id="frontend">
+                            <h3 class="text-center" style="color: #817198;"><b>Back-end</b></h3>
                             <hr>
-                                <p><i class="fa fa-clock-o mr-1"></i>Septembre 2019 - Mars 2020</br>
+                            <p>Développement de sites web, création et gestion de base de données, programmation orientée objet,
+                                mise en ligne</p>
                             <hr>
-                                Formation intensive à l'école numérique LA MANU de Noyon (60400)<br/>
-                                durée de la formation: 805 heures sur 6 mois<br/>
-                                Formation diplômante préparant au Titre Professionel "Developpeur Web Web Mobile"<br/>
-                                RNCP 31114 BAC+2, Niveau 5 de la nomencalture européenne<br/>
-                                Titre certifié par l'Etat et délivré par la ministère du travail<br/>
-                            <hr>
-                                Titre d'Etat obtenu en Octobre 2020.</p>
-                        </li>
-                        <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-                            <div class="timeline-arrow"></div>
-                            <h3 class="h4 mb-0 text-center">BTS Action Commerciale</h3>
-                            <hr>
-                            <p><i class="fa fa-clock-o mr-1"></i>Septembre 2001 - Juillet 2003<br/>
-                            <hr>
-                            Contrat d'apprentissage avec l'Institut Consulaire de Formation en Alternance (ICFA) et France Telecom
-                            <hr>
-                                Bordeaux (33000)</p>
-                        </li>
-                        <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-                            <div class="timeline-arrow"></div>
-                            <h3 class="h4 mb-0 text-center">Bac Scientifique option Mathématiques</h3>
-                            <hr>
-                            <p><i class="fa fa-clock-o mr-1"></i>Juillet 1997<br>
-                            <hr>
-                            Lycée La Sauque <br>
-                            33650 La Brède</p>
-                        </li>
-                    </ul><!-- End -->
+                            <img src="assets/img/c-sharp.png" id="dotnet"/>.NET <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br/>        
+                            <i class="fab fa-php"></i> PHP <i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br />
+                            MySql <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i
+                                class="far fa-star"></i><i class="far fa-star"></i><br />
+                                <i class></i>
+                            Connexion FTP <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i
+                                class="far fa-star"></i><i class="far fa-star"></i><br />
+                        </div>
+                    </div>
+                    <div id="workflow">
+                        <h3 style="color: #817198;"><b>Environnement de travail :</b></h3>
+                        <hr>
+                        <p>
+                            <i class="fas fa-laptop-code"></i> <b>système d'exploitation :</b> Windows 10, Linux ubuntu <br/>                    
+                            <i class="fas fa-terminal"></i> <b>Workflow :</b> GitHub, WAMP, uWamp, Firefox, Google Chrome,
+                            Filezilla<br />
+                            <i class="fas fa-code"></i> <b>IDE:</b> Visual Studio, Visual Studio Code, Atom, NetBeans, Sublim Text </br>
+                            <i class="fas fa-code"></i> <b>CMS:</b> WordPress</br>
+                            <i class="fas fa-user"></i> <b>Savoir-être :</b> travail en équipe, bon relationnel, capacité
+                            d'écoute et d'analyse, facilité d'adaptation, organisation, rigueur</p>
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skill">
-        <div class="container-fluid">
-            <h2 class="text-center"><b><i>Compétences</i></b></h2>
-            <div class="row">
-                <div class="col" id="frontend" >
-                    <h3 class="text-center" style="color: #817198;"><b>Front-end</b></h3>
-                    <hr>
-                    <p>Création et integration de sites web responsives , accessibles et répondant aux normes W3C</p>
-                    <hr>
-                    <i class="fab fa-html5 text-right"></i> HTML5 <span class="text-right"></span><i
-                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                        class="far fa-star"></i><i class="far fa-star"></i></span><br />
-                    <i class="fab fa-css3-alt"></i> CSS3 <i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                        class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br />
-                    <i class="fab fa-js-square"></i> Javascript <i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                        class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br />
-                    JQuery <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i
-                        class="far fa-star"></i><i class="far fa-star"></i><br />
-                    <i class="fab fa-bootstrap"></i> Bootstrap <i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                        class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br />
-                    JSON <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
-                        class="far fa-star"></i><i class="far fa-star"></i><br />
-                    AJAX <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
-                        class="far fa-star"></i><i class="far fa-star"></i><br />
+            </section>
+        
+            <section id="project">
+                <div class="container-fluid">
+                    <h2 class="text-center"><b><i>Projet en cours de finition :</i></b></h2><br />
+                    <p>Lors de ma formation, j'ai developpé des codes en groupe afin de faire des sites web, sur differentes
+                        thématiques.</br>
+                        Pour l'obtention du titre professionel "Developpeur Web Web Mobile", j'ai réalisé le projet
+                        "mamienouche.com", actuellement en cours de finition.
+                        <hr>
+                        Thématique de ce site: "comment confectionner les produits pour l'entretien de la maison, des produits
+                        d'hygiène/cosmétique depuis chez soi, et astuces de grand-mère à moindre côut".
+                        <hr>
+                        La réalisation de ce site m'a permis d'approffondir mes connaissances et aborder de nouvelles techniques,
+                        comme Ajax.<br />
+                        Voici quelques views pour avoir une vision globale du site. <br/>Vous pouvez également vous rendre sur ce
+                        site, libre d'acces : </p>
+                        <hr>
+                        <h4 class="text-center" ><a href="https://mamienouche.com/" style="color:rgb(87, 36, 87);"><i>Vues du site </i><b>mamienouche.com</b></a></h4>
+                
+                    <div id="slider" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Vue 1"></button>
+                            <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Vue 2"></button>
+                            <button type="button" data-bs-target="#slider" data-bs-slide-to="2"  aria-label="Vue 3"></button>                            
+                            <button type="button" data-bs-target="#slider" data-bs-slide-to="3"  aria-label="Vue 4"></button>
+                            <button type="button" data-bs-target="#slider" data-bs-slide-to="4"  aria-label="Vue 5"></button>
+                            <button type="button" data-bs-target="#slider" data-bs-slide-to="5"  aria-label="Vue 6"></button>
+                            <button type="button" data-bs-target="#slider" data-bs-slide-to="6"  aria-label="Vue 7"></button>
+                            <button type="button" data-bs-target="#slider" data-bs-slide-to="7"  aria-label="Vue 8"></button>
+                            <button type="button" data-bs-target="#slider" data-bs-slide-to="8"  aria-label="Vue 9"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-interval="300">
+                                <img src="assets/img/acceuilMamieNouche.png" class="d-block w-100" alt="acceuil">
+                            </div>
+                            <div class="carousel-item" data-interval="300">
+                                <img src="assets/img/creationCompte.png" class="d-block w-100" alt="creation de compte">
+                            </div>
+                            <div class="carousel-item" data-interval="300">
+                                <img src="assets/img/confirmationCreation.png" class="d-block w-100" alt="message d'enregistrement de compte">
+                            </div>   
+                            <div class="carousel-item" data-interval="300">
+                                <img src="assets/img/connexionMamienouche.png" class="d-block w-100" alt="connexion">
+                            </div>
+                            <div class="carousel-item" data-interval="300">
+                                <img src="assets/img/MDPoublié.png" class="d-block w-100" alt="mot de passe oublié">
+                            </div>
+                            <div class="carousel-item" data-interval="300">
+                                <img src="assets/img/userProfile.png" class="d-block w-100" alt="Profil de l'utilisateur">
+                            </div>
+                            <div class="carousel-item" data-interval="300">
+                                <img src="assets/img/redactionArticles.png" class="d-block w-100" alt="redaction de recette">
+                            </div>
+                            <div class="carousel-item" data-interval="300">
+                                <img src="assets/img/articleWritten.png" class="d-block w-100" alt="modification d'une recette">
+                            </div>                
+                            <div class="carousel-item" data-interval="300">
+                                <img src="assets/img/listeUsers.png" class="d-block w-100" alt="Liste des utilisateurs">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#slider"  data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#slider"  data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                    </div>
                 </div>
-                <div class="col" id="frontend">
-                    <h3 class="text-center" style="color: #817198;"><b>Back-end</b></h3>
-                    <hr>
-                    <p>Développement de sites web, création et gestion de base de données, programmation orientée objet,
-                        mise en ligne</p>
-                    <hr>
-                    <img src="../assets/img/c-sharp.png" id="dotnet"/>.NET <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br/>        
-                    <i class="fab fa-php"></i> PHP <i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                        class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><br />
-                    MySql <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i
-                        class="far fa-star"></i><i class="far fa-star"></i><br />
-                        <i class></i>
-                    Connexion FTP <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i
-                        class="far fa-star"></i><i class="far fa-star"></i><br />
+            </section>
+        
+            <section id="experience">
+                <div class="container">
+                    <h2 class="text-center" style="color: #817198;"><b><i>Expériences professionelles</i></b></h2>
+        
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <!-- Timeline -->
+                            <ul class="timeline">
+                                <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                                    <div class="timeline-arrow"></div>
+                                    <h4 class="text-center"><b>Conseillère clientèle - Assistante technique</b></h4>
+                                    <hr>
+                                    <span class="text-center"><i class="fa fa-clock-o mr-1"></i> Février 2007 - Juillet
+                                        2019</span>
+                                        <hr>
+                                    <span class="text-center">Voyages Rive Gauche<br /> 93320 Les Pavillons Sous bois</span>
+                                    <hr>
+                                    <ul class="text-small mt-2 font-weight-light">
+                                        <li>Acceuil physique et téléphonique de la clientèle</li>
+                                        <li>Ecoute et analyse des attentes des clients</li>
+                                        <li>Suivi du dossier des clients ( de la vente du voyage jusqu'au départ)</li>
+                                        <li>Démarches administratives( demande de visas auprès des organismes concernés, respect
+                                            du timing , envoi du carnet de voyage aux clients, relance de solde)</li>
+                                    </ul>
+                                </li>
+                                <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                                    <div class="timeline-arrow"></div>
+                                    <h4 class="text-center"><b> Septembre 2003 - Janvier 2007:</b></h4>
+                                    <hr>
+                                    <ul class="text-small mt-2 ">
+                                        <li><b>Chargée de recouvrement</b> - Orange (33000 Bordeaux)</li>
+                                        <li><b>Conseillère clientèle</b> - Cofinoga (33000 Bordeaux)</li>
+                                        <li><b>Gestionnaire de sinistres</b> - Cofinoga assurances (33700 Mérignac)</li>
+                                        <li><b>Conseillère clientèle</b> - Banque Casino (33000 Bordeaux)</li>
+                                    </ul>
+                                </li>
+                                <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                                    <div class="timeline-arrow"></div>
+                                    <h4 class="text-center"><b>Conseillère Clientèle à distance</b></h4>
+                                    <hr>
+                                    <span class="text-center"><i class="fa fa-clock-o mr-1"></i> Septembre 2001 - Aout
+                                        2003</span>
+                                        <hr>
+                                    <span class="text-center">FRANCE TELECOM <br>
+                                         33000 Bordeaux</span>
+                                </li>
+                                <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                                    <div class="timeline-arrow"></div>
+                                    <h4 class="text-center"><b>Chef d'équipe - formatrice</b></h4>
+                                    <hr>
+                                    <span class="text-center"><i class="fa fa-clock-o mr-1"></i> Septembre 1998 - Septembre
+                                        2001</span>
+                                        <hr>
+                                    <span class="text-center">MC DONALD'S<br /> 33300 Bordeaux</span>
+                                </li>
+                            </ul><!-- End -->
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div id="workflow">
-                <h3 style="color: #817198;"><b>Environnement de travail :</b></h3>
-                <hr>
-                <p>
-                    <i class="fas fa-laptop-code"></i> <b>système d'exploitation :</b> Windows 10, Linux ubuntu <br/>                    
-                    <i class="fas fa-terminal"></i> <b>Workflow :</b> GitHub, WAMP, uWamp, Firefox, Google Chrome,
-                    Filezilla<br />
-                    <i class="fas fa-code"></i> <b>IDE:</b> Visual Studio, Visual Studio Code, Atom, NetBeans, Sublim Text </br>
-                    <i class="fas fa-code"></i> <b>CMS:</b> WordPress</br>
-                    <i class="fas fa-user"></i> <b>Savoir-être :</b> travail en équipe, bon relationnel, capacité
-                    d'écoute et d'analyse, facilité d'adadptation, organisation, rigueur</p>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="project">
-        <div class="container-fluid">
-            <h2 class="text-center"><b><i>Projet en cours de finition :</i></b></h2><br />
-            <p>Lors de ma formation, j'ai developpé des codes en groupe afin de faire des sites web, sur differentes
-                thématiques.</br>
-                Pour l'obtention du titre professionel "Developpeur Web Web Mobile", j'ai réalisé le projet
-                "mamienouche.com", actuellement en cours de finition.
-                <hr>
-                Thématique de ce site: "comment confectionner les produits pour l'entretien de la maison, des produits
-                d'hygiène/cosmétique depuis chez soi, et astuces de grand-mère à moindre côut".
-                <hr>
-                La réalisation de ce site m'a permis d'approffondir mes connaissances et aborder de nouvelles techniques,
-                comme Ajax.<br />
-                Voici quelques views pour avoir une vision globale du site. <br/>Vous pouvez également vous rendre sur ce
-                site, libre d'acces : </p>
-                <h4 class="text-center" ><a href="https://mamienouche.com/" style="color:azure;"><b>mamienouche.com</b></a></h4>
-            <hr>
-            <div id="slider" class="text-center">
-                <figure>
-                    <img src="assets/img/acceuilMamieNouche.png" alt="acceuil">
-                    <img src="assets/img/creationCompte.png" alt="creation de compte">
-                    <img src="assets/img/connexionMamienouche.png" alt="connexion">
-                    <img src="assets/img/MDPoublié.png" alt="mot de passe oublié">
-                    <img src="assets/img/userProfile.png" alt="Profil de l'utilisateur">
-                    <img src="assets/img/redactionArticles.png" alt="redaction de recette">
-                    <img src="assets/img/articleWritten.png" alt="modification d'une recette">
-                    <img src="assets/img/confirmationCreation.png" alt="message d'enregistrement de la recette">
-                    <img src="assets/img/listeUsers.png" alt="Liste des utilisateurs">
-                    <img src="assets/img/acceuilMamieNouche.png" alt="acceuil">
-                </figure>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience">
-        <div class="container">
-            <h2 class="text-center" style="color: #817198;"><b><i>Expérience professionelle</i></b></h2>
-
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <!-- Timeline -->
-                    <ul class="timeline">
-                        <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-                            <div class="timeline-arrow"></div>
-                            <h4 class="text-center"><b>Conseillère clientèle - Assistante technique</b></h4>
-                            <hr>
-                            <span class="text-center"><i class="fa fa-clock-o mr-1"></i>Février 2007 - Juillet
-                                2019</span>
-                                <hr>
-                            <span class="text-center">Voyages Rive Gauche<br /> 93320 Les Pavillons Sous bois</span>
-                            <hr>
-                            <ul class="text-small mt-2 font-weight-light">
-                                <li>Acceuil physique et téléphonique de la clientèle</li>
-                                <li>Ecoute et analyse des attentes des clients</li>
-                                <li>Suivi du dossier des clients ( de la vente du voyage jusqu'au départ)</li>
-                                <li>Démarches administratives( demande de visas auprès des organismes concernés, respect
-                                    du timing , envoi du carnet de voyage aux clients, relance de solde)</li>
-                            </ul>
-                        </li>
-                        <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-                            <div class="timeline-arrow"></div>
-                            <h4 class="text-center"><b>Septembre 2003 - Janvier 2007:</b></h4>
-                            <hr>
-                            <ul class="text-small mt-2 ">
-                                <li><b>Chargée de recouvrement</b> - Orange (33000 Bordeaux)</li>
-                                <li><b>Conseillère clientèle</b> - Cofinoga (33000 Bordeaux)</li>
-                                <li><b>Gestionnaire de sinistres</b> - Cofinoga assurances (33700 Mérignac)</li>
-                                <li><b>Conseillère clientèle</b> - Banque Casino (33000 Bordeaux)</li>
-                            </ul>
-                        </li>
-                        <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-                            <div class="timeline-arrow"></div>
-                            <h4 class="text-center"><b>Conseillère Clientèle à distance</b></h4>
-                            <hr>
-                            <span class="text-center"><i class="fa fa-clock-o mr-1"></i>Septembre 2001 - Aout
-                                2003</span>
-                                <hr>
-                            <span class="text-center">FRANCE TELECOM <br>
-                                 33000 Bordeaux</span>
-                        </li>
-                        <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
-                            <div class="timeline-arrow"></div>
-                            <h4 class="text-center"><b>Chef d'équipe - formatrice</b></h4>
-                            <hr>
-                            <span class="text-center"><i class="fa fa-clock-o mr-1"></i>Septembre 1998 - Septembre
-                                2001</span>
-                                <hr>
-                            <span class="text-center">MC DONALD'S<br /> 33300 Bordeaux</span>
-                        </li>
-                    </ul><!-- End -->
+            </section>
+            <section id="contact">
+                <div Class="container-fluid">
+                    <h2 class="text-center"><b><i>Contact</i></b></h2>
+                    <div class="row">
+                        <div class="col" id="join">
+                            <i class="fas fa-mobile-alt fa-4x"></i><br />
+                            <p><b>+33 6 09 16 10 13</b></p>
+                        </div>
+                        <div class="col" id="join">
+                            <i class="far fa-paper-plane fa-4x"></i><br />
+                            <p><a href="ludivine.nadeau@gmail.com" >ludivine.nadeau@gmail.com</p></a>
+                        </div>
+                        <div class="col" id="join">
+                            <i class="fas fa-map-marked-alt fa-4x"></i><br />
+                            <p>20 Rue de la basse Ville<br />
+                                60310 LASSIGNY</p>
+                        </div>
+                        <div class="col" id="join">
+                            <a class=btn" href="https://www.linkedin.com/in/ludivine-nadeau-522a4b8b">
+                                <i class="fab fa-linkedin fa-4x"></i><br />
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div Class="container-fluid">
-            <h2 class="text-center"><b><i>Contact</i></b></h2>
-            <div class="row">
-                <div class="col" id="join">
-                    <i class="fas fa-mobile-alt fa-4x"></i><br />
-                    <p><b>+33 6 09 16 10 13</b></p>
-                </div>
-                <div class="col" id="join">
-                    <i class="far fa-paper-plane fa-4x"></i><br />
-                    <p><a href="ludivine.nadeau@gmail.com">ludivine.nadeau@gmail.com</p></a>
-                </div>
-                <div class="col" id="join">
-                    <i class="fas fa-map-marked-alt fa-4x"></i><br />
-                    <p>20 Rue de la basse Ville<br />
-                        60310 LASSIGNY</p>
-                </div>
-                <div class="col" id="join">
-                    <a class=btn" href="https://www.linkedin.com/in/ludivine-nadeau-522a4b8b">
-                        <i class="fab fa-linkedin fa-4x"></i><br />
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <!-- Scroll to Top Button-->
-        <a href="https://www.linkedin.com/in/ludivine-nadeau-522a4b8b" target="_blank"><i class="fab fa-linkedin-in text-center"></i></a>
-        <i class="far fa-print" onclick="window.open('files/CV.pdf')"></i><br />
-        <a class="scrollToTop" href="#page-top">
-            <i class="fas fa-paint-home"></i>
-        </a>
+            </section>
+        <footer>
+                   <!-- Scroll to Top Button
+            <a href="https://www.linkedin.com/in/ludivine-nadeau-522a4b8b" target="_blank"><i class="fab fa-linkedin-in text-center"></i></a>
+                <i class="far fa-print" onclick="window.open('files/CV.pdf')"></i><br />
+            <a class="scrollToTop" href="#page-top">
+                <i class="fas fa-paint-home"></i>
+            </a>-->
         <div class="text-center">
             <p>Ludivine Nadeau ©
                 <hr>
-                Website2020</p>
+                Website2021</p>
         </div>
+      </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/161626f7e5.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="assets/js/script.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-        
-    </footer>
-</body>
+        </body>
+
+        </html>
