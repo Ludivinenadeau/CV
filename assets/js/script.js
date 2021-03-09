@@ -8,11 +8,11 @@ jQuery(document).ready(function ($) {
 });
 
 function passageDeLaSouris(element) {
-  element.setAttribute('src', '/assets/img/photoProfil.jpg');
+  element.setAttribute('src', 'assets/img/photoProfil.jpg');
   }
   //Affecte l'image de départ lorsque la souris ne survole plus l'élément
 function departDeLaSouris(element) {
-  element.setAttribute('src', '/assets/img/face_co.png');
+  element.setAttribute('src', 'assets/img/face_co.png');
   }  
 
   $( function() {
@@ -49,3 +49,10 @@ function departDeLaSouris(element) {
       return false;
     });
   } );
+
+  const navLinks = document.querySelectorAll('.nav-item')
+  const menuToggle = document.getElementById('navbar')
+  const bsCollapse = new bootstrap.Collapse(menuToggle)
+  navLinks.forEach((l) => {
+      l.addEventListener('click', () => { bsCollapse.toggle() })
+  })

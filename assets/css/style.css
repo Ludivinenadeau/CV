@@ -1,5 +1,5 @@
 body{
-    margin-top: 15px;
+    margin-top: 50px;;
     font-family: "Roboto", sans-serif;
     font-size: 18px;
     line-height: 30px;
@@ -7,39 +7,10 @@ body{
     padding-right: 2em;
 }
 
-#navbarPosition{
-    /*position: fixed;*/
-    padding-left: 2em;
-    /*padding-right: 2em;
-    margin-right: 2em;*/
-    background-color: rgba(31, 27, 27, 0.4);
-    color: #d5b5e066;
-    /*display:inline-block;*/
-    /*z-index: 9999;*/
-    font-size: 18px;
-    text-align: center;   
-}
-
 i.fas-fa-home{
     color: #d5b5e066;
     
 }
-
-.image-container {
-    position: relative;
-    text-align: center;  
-    border-radius: 10px;
-    color: rgba(213, 181, 224, 0,4);
-}
-
-.image-centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-
 
 .navbar-nav li a{
     color: white;
@@ -49,21 +20,21 @@ i.fas-fa-home{
   }
 
 section {
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
     margin-bottom: 1em;
-    margin-top: 2em;
+    margin-top: 2em;;
 }
 
 #profil {
     display:inline-block;
     max-width:200px;
-    background: url('/assets/img/face_co.png') no-repeat;
+    background: url('../assets/img/face_co.png') no-repeat;
     }
 
 #profil a{
     display: inline-block;
-    background: url('/assets/img/photoProfil.jpg') no-repeat;
+    background: url('../assets/img/photoProfil.jpg') no-repeat;
     }
 
 #profil a:hover img {
@@ -311,5 +282,14 @@ footer{
   }
 
  
-  
+#bureau{
+    background-image: url(../img/bureau.png);
+    background-size: cover;
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    /*margin-top: 1.2em;*/
+    border-radius: 10px;
+    
+}
 
